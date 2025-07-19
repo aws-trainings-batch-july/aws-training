@@ -3031,3 +3031,162 @@ LINUX/UNIX SERVER --> WINDOWS never works, even somebody ask that, i installed g
 
 
 Knowledge on linux commands with various options
+
+
+==========================================
+
+19TH July 2025
+
+LOAD BALANCER : 
+
+
+it distributes automatically the app or network or gateway  traffic among multiple  target servers  or ec2 instances , containers or micro services 
+
+redirect 
+
+http
+
+https 
+
+
+
+application 
+network
+gateway 
+
+
+aws --> 
+
+ELB
+
+alb -> app load balancer    -> layer 7 --> traffic from http or https (TCP) ---> web application s , low latency , reliable connection 
+
+amazoncom  -> order 
+
+amazoncom/mobiles 
+amazon.com/laptops 
+
+
+
+nlb -> network load balancer  -> layer 4 --> UDP  ->  Broad casting , netflex or youtube or any live streaming platform  , high throughput , low latency 
+
+gwlb -> gateway load balancer 
+
+clb -> classic load balancer  -> legacy load balancer -> layer 7 , routing mechanism 
+
+
+OSI model or TCP/IP model  ->ISO  ----> network communication system framework 
+
+
+7 layers 
+
+
+CLIENT OR USER                                                                                             AMAZON.COM
+
+
+
+All people should try new dominos pizza 
+
+A
+P
+S
+T
+N
+D
+P
+
+
+
+
+APPLICATION LAYER --> at layer 7 ----> User interface --> http or https -> web server protocals  
+
+PRESENATION LAYER --> at layer 6 encryption and compression 
+
+SESSION LAYER -> at layer 5 -> establishing the session connection and persist the session management , log in session  
+
+TRANPORT LAYER -> at layer 4 -> 
+
+Network layer -> net work communication between devices , virtual network of devices -> public ip address ip address 
+
+Datalink layer -> mac address of devices 
+
+physical layer --> routes , cables , twist , optic fibers  cables 
+
+
+===============
+
+
+how do you divert or switch the application  traffic between the  2 target servers ?
+
+
+
+2 servers 
+
+1 dedicated sg 
+
+alb 
+
+
+
+
+
+ALB 
+
+
+server1 
+
+server2 
+
+
+
+3 types of routing mechanism or algorithm
+
+
+round robin 
+
+weighted routing   --> 5   --> 2    -> 70 % --server 1 -> 30% -> server 2
+
+least 
+
+
+1000 hit the web application 
+
+server1  --> 100 requests
+server2  --> 100 requests
+server3  --> 100 requests
++7 servers ---> 
+
+
+50 requests 
+
+200 requests 
+
+
+ASG -> 
+
+Auto scaling group <------- alb  <---------- TG <---------------- servers or instances  
+
+
+activity 
+
+
+
+simulate resource load or pressure 
+
+stress --> tool name 
+
+t2.micro 
+
+1 cpu 
+
+nproc 
+
+
+=============
+
+ASG 
+
+Scaling policies  -> types of scaling policies 
+
+
+ASG -> instance capacity types 
