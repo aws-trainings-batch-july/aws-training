@@ -3190,3 +3190,113 @@ Scaling policies  -> types of scaling policies
 
 
 ASG -> instance capacity types 
+
+
+=====================
+20th july 2025 : auto scaling group 
+
+
+8th 9th 10th 
+
+
+8th --> 70 students 
+
+8th std 
+sec a  -> 50 seats  (enlarge it make it avaible for 70 )
+sec b  -> 20 seats (idle)
+
+15 students 
+
+================
+
+why do we use auto scaling group ?
+
+
+mobile canteen or restaurant
+
+1 chef  or 3 chef 
+
+5 customers 
+
+3 chefs 
+
+20 customers 
+
+7 chefs 
+
+100 customers 
+
+fire 6 , retain 1 
+
+7 customers 
+
+
+
+50 customers 
+
+
+minimun no. 1 chef 
+there is no  customers 
+
+
+================================
+
+
+ASG <-----ALB  <----- Target group <---------- instances 
+
+
+ALB -> SG FOR ALB --> ssh,http   ---------------> 2 instances 
+
+===============
+
+ALB ->  SG FOR ALB -> http 80 -> 
+
+50 rules 
+
+
+ASG -> SG FOR ASG (ssh, ALB's SG ) -----------------> no.of instances 
+
+
+
+AverageCPUUtilization ---> 60 % ----> new instance 
+
+
+===================
+
+future forcasting or predicting 
+
+
+asg 
+
+dynamic scaling -> on demand 
+
+  target tracking policy --> automatically --> cloud watch alerm --> 60% --> increase 1 
+
+  step scaling -> 
+     alerm will be created manually
+    no. of steps
+        step 1 --> avg cpu usage -> >60 % and < 70% --> 2 instances
+        step 2 --> avg cpu usage -> > 70 %  and <80 --> 2 instances 
+ 
+    simple scaling -> 
+           alerm will be created manually on local machine    
+
+
+
+predictive scaling -->  historical data or 14 days ---> 50 or 60 
+
+scheduled scaling policy --->  black friday --> e com app ----> from 25th    to 26th  -> 6 instances 
+
+
+============
+26th and 27th --> upcoming topics 
+storage services 
+
+ebs 
+s3
+efs 
+
+
+
+
+
